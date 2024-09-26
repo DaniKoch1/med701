@@ -1,2 +1,2 @@
-# med701
-Semester project on the first semester of MSc in Medialogy.
+# MED701
+Semester project on the 7th semester of MSc in Medialogy.
