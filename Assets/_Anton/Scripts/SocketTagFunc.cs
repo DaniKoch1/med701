@@ -6,7 +6,7 @@ using UnityEngine;
 public class SocketTagFunc : MonoBehaviour
 {
 
-    public GameObject gameObject;
+    //public GameObject gameObject;
     
     public int number = 1; 
 
