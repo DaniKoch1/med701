@@ -641,7 +641,7 @@ PrefabInstance:
     - target: {fileID: 1659109656608088187, guid: 4de8213faa23b944da3351ab327b030a, type: 3}
       propertyPath: firstImage
       value: 
-      objectReference: {fileID: 2800000, guid: 8893d541c11c8fc468096d8f9d1909a1, type: 3}
+      objectReference: {fileID: 2800000, guid: 8ddcc42e9806b9d48bf99e70ad9d646e, type: 3}
     - target: {fileID: 1659109656608088187, guid: 4de8213faa23b944da3351ab327b030a, type: 3}
       propertyPath: brushColor.b
       value: 1
