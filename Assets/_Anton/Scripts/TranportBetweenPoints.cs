@@ -9,6 +9,8 @@ public class TranportBetweenPoints : MonoBehaviour
     public Transform pointB;
     public float duration = 2.0f;
 
+
+    public LightManager LightManager;
     private bool isMoving = false;
     private float t = 0.0f;
 
@@ -57,6 +59,7 @@ public class TranportBetweenPoints : MonoBehaviour
             isMoving = true;
             t = 0.0f;
             hasMoved = true;
+            LightManager.ToggleLight();
         }
     }
 }
