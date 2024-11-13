@@ -96,8 +96,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0d25dcd7f7402744fbc45c7a83beb4e5, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 2ec13429a2353744b98cfdec243dca47, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -214,6 +214,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1127343397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.61540747
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.02260214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.82737446
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95441115
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2984953
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -34.735
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cface189d41a0043a4696098ff03cf3, type: 2}
+    - target: {fileID: 919132149155446097, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_Name
+      value: HumanSizereff
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7beca1ac8b74d44a9e40424e398d414, type: 3}
 --- !u!1 &1326761784
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1715325385639745277, guid: 9f3a313d791984341898d3652690be68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.45
+      objectReference: {fileID: 0}
     - target: {fileID: 3959997534358106890, guid: 9f3a313d791984341898d3652690be68, type: 3}
       propertyPath: m_Name
       value: RoomBase
@@ -371,4 +440,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 878998336}
   - {fileID: 1326761786}
+  - {fileID: 1127343397}
   - {fileID: 6388366870137495983}
