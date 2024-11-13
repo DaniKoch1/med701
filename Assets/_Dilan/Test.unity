@@ -624,7 +624,7 @@ Transform:
   m_GameObject: {fileID: 731639410}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 2.05, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,7 +641,11 @@ PrefabInstance:
     - target: {fileID: 1659109656608088187, guid: 4de8213faa23b944da3351ab327b030a, type: 3}
       propertyPath: firstImage
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 2800000, guid: 8ddcc42e9806b9d48bf99e70ad9d646e, type: 3}
+=======
+      objectReference: {fileID: 2800000, guid: f1a72cc7225cd264db21184af42f4a65, type: 3}
+>>>>>>> Stashed changes
     - target: {fileID: 1659109656608088187, guid: 4de8213faa23b944da3351ab327b030a, type: 3}
       propertyPath: brushColor.b
       value: 1
@@ -788,13 +792,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142709593}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.76, y: 2.03, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1291832791
 GameObject:
   m_ObjectHideFlags: 0
