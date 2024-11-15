@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TranportBetweenPoints : MonoBehaviour
 {
@@ -8,9 +9,33 @@ public class TranportBetweenPoints : MonoBehaviour
     public Transform pointB;
     public float duration = 2.0f;
 
+
+    public LightManager LightManager;
     private bool isMoving = false;
     private float t = 0.0f;
 
+    private bool hasMoved = false;
+
+    public bool item1ready
+        { get; set; }
+
+    public bool item2ready
+        { get; set; }
+
+    public bool item3ready
+        { get; set; }
+
+
+
+
+    
+
+
+    private void Start()
+    {
+        //Just set the position to the A transform
+        transform.position = pointA.position;
+    }
     void Update()
     {
         if (isMoving)
@@ -26,9 +51,15 @@ public class TranportBetweenPoints : MonoBehaviour
         }
     }
 
-        public void StartMoving()
+    public void StartMoving()
     {
-        isMoving = true;
-        t = 0.0f;
+        Debug.Log("start moving called");
+        if (!isMoving && !hasMoved && item1ready && item2ready && item3ready)
+        {
+            isMoving = true;
+            t = 0.0f;
+            hasMoved = true;
+            LightManager.ToggleLight();
+        }
     }
 }
