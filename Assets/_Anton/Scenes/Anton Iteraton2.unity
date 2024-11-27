@@ -1786,13 +1786,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1165045505909001650, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401558217008304353, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401558217008304353, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401558217008304353, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401558217008304353, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 56
+      objectReference: {fileID: 0}
     - target: {fileID: 3200166513295114602, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 4359127577729891409, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6760544231772138785, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
       propertyPath: m_Name
       value: XR setup1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617656790226799, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
+      propertyPath: m_Text
+      value: 'Clean the equipment, and ship to  next room.
+
+        ---------------------
+
+        *
+        Find the box with equipment
+
+        *Inspect for Microbial growth
+
+        *
+        Inspect for damage
+
+        * Place useable items in port to next cleanroom'
       objectReference: {fileID: 0}
     - target: {fileID: 7260497981298631315, guid: 84d0f0e5feb852a4da0468b7266708bd, type: 3}
       propertyPath: m_AnchorMax.x
