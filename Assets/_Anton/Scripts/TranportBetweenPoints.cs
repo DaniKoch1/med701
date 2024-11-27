@@ -50,15 +50,11 @@ public class TranportBetweenPoints : MonoBehaviour
         Debug.Log("start moving called");
         if (!isMoving && !hasMoved && item1ready && item2ready && item3ready)
         {
-            SoundManager.PlaySound(SoundManager.Sound.Success);
-            isMoving = true;
+                       isMoving = true;
             t = 0.0f;
             hasMoved = true;
             LightManager.ToggleLight();
         }
-        else
-        {
-            SoundManager.PlaySound(SoundManager.Sound.Fail);
-        }
+      
     }
 }

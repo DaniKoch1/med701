@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463202743934223394}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.833, y: 0.527, z: -0.029}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.833, y: 0.53084844, z: -0.029000044}
   m_LocalScale: {x: 0.3203739, y: 1.1917, z: 0.040772248}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2453639269026177921}
+  m_Father: {fileID: 3574586779185633888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5008253460243636730
 MeshFilter:
@@ -344,7 +344,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4078479672080703589}
   - {fileID: 3574586779185633888}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -416,6 +415,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4078479672080703589}
   - {fileID: 5210443462947024928}
   m_Father: {fileID: 2453639269026177921}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -657,7 +657,7 @@ HingeJoint:
   m_GameObject: {fileID: 8595656068368267513}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: -0.03}
+  m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -1.8099405, y: 0.8581515, z: -2.358}
@@ -672,12 +672,12 @@ HingeJoint:
     targetVelocity: 0
     force: 0
     freeSpin: 0
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: 0
-    max: 0
+    min: -100
+    max: 100
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
