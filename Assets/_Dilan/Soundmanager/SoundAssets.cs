@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class SoundAssets : MonoBehaviour
 {
-    private static SoundAssets _i;
+    private static SoundAssets instance;
 
-    public static SoundAssets i
+    public static SoundAssets Intance
     {
         get
         {
-            if (i == null) _i = Instantiate(Resources.Load<SoundAssets>("SoundAssets"));
-            return _i;
+            if (instance == null) instance = Instantiate(Resources.Load<SoundAssets>("SoundAssets"));
+            return instance;
         }
     }
 
@@ -23,5 +23,7 @@ public class SoundAssets : MonoBehaviour
         public SoundManager.Sound sound;
         public AudioClip audioClip;
     }
+
+    
 
 }
