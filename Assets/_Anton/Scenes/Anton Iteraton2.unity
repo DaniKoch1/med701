@@ -1063,6 +1063,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724730881}
   m_Mesh: {fileID: -5970800810816929254, guid: 91d1246072ac1f94c892178ad7887d8c, type: 3}
+--- !u!65 &852093298 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 4746496841806171689, guid: 9f3a313d791984341898d3652690be68, type: 3}
+  m_PrefabInstance: {fileID: 6388366870137495983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &858833891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1278,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975117522}
   m_Mesh: {fileID: 6566777498039324609, guid: fcb5eb169ed525d47b77a0dc026351d4, type: 3}
+--- !u!65 &994021408 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 1820297361076160689, guid: 9f3a313d791984341898d3652690be68, type: 3}
+  m_PrefabInstance: {fileID: 6388366870137495983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1009050525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,8 +1312,8 @@ Transform:
   m_GameObject: {fileID: 1009050525}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.505, y: 2.18, z: -7.874}
-  m_LocalScale: {x: 4.8, y: 4, z: 5}
+  m_LocalPosition: {x: -0.505, y: -0.194, z: -6.701}
+  m_LocalScale: {x: 5.1, y: 0.5, z: 7.65}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 175370448}
@@ -5225,6 +5235,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6533103408619240117, guid: 41db1b0a3bdf3e44eb2bfa0def58fe32, type: 3}
+      propertyPath: m_Colliders.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533103408619240117, guid: 41db1b0a3bdf3e44eb2bfa0def58fe32, type: 3}
+      propertyPath: m_Colliders.Array.data[0]
+      value: 
+      objectReference: {fileID: 994021408}
+    - target: {fileID: 6533103408619240117, guid: 41db1b0a3bdf3e44eb2bfa0def58fe32, type: 3}
+      propertyPath: m_Colliders.Array.data[1]
+      value: 
+      objectReference: {fileID: 852093298}
     - target: {fileID: 8399226900946231306, guid: 41db1b0a3bdf3e44eb2bfa0def58fe32, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

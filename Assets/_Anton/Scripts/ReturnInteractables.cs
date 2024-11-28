@@ -19,7 +19,7 @@ public class ReturnInteractables : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider _interactableToReturn)
+    private void OnTriggerEnter(Collider _interactableToReturn)
     {
         if ((interactableLayer.value & (1 << _interactableToReturn.gameObject.layer)) != 0 && originalPositions.ContainsKey(_interactableToReturn.gameObject))
         {
