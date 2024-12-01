@@ -2890,9 +2890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d8eeb317d57adb49aae1ca7df443395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <item1place>k__BackingField: 0
-  <item2place>k__BackingField: 0
-  <item3place>k__BackingField: 0
 --- !u!1 &1605846364
 GameObject:
   m_ObjectHideFlags: 0
