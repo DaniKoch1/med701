@@ -21,7 +21,7 @@ public static class SoundManager
     }
     private static AudioClip GetAudioClip(Sound sound)
     {
-        foreach (SoundAssets.SoundAudoClip soundAudoClip in SoundAssets.i.soundAudoClipArray)
+        foreach (SoundAssets.SoundAudoClip soundAudoClip in SoundAssets.Intance.soundAudoClipArray)
         {
             if (soundAudoClip.sound == sound)
             {
