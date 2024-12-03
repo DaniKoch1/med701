@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ApprovedComponent
-  - BrokenComponent
+  - PlayerHand
+  - blueBox
+  - GloveBox
   layers:
   - Default
   - TransparentFX
