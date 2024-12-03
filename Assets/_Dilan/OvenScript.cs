@@ -16,27 +16,33 @@ public class OvenScript : MonoBehaviour
 
     private bool hasRun = false;
 
-    public GameObject pointLight; // Drag your Point Light into this field in the Inspector
+    public ClipboardManager _clipboardManager;
+    public GameObject pointLight;
 
-    private bool isLightOn = false; // Keeps track of the light's current state
+    public GameObject[] objectsToHide;
 
-    public GameObject[] objectsToHide; // Array to hold multiple GameObjects
+    private bool areObjectsVisible = true;
 
-    private bool areObjectsVisible = true; // Tracks the visibility state
-
-    // This method will be called when the button is interacted with
     public void Microwave()
     {
-        if (item1place && item2place && item3place)
+        if (!hasRun && item1place && item2place && item3place)
         {
-            AudioManager.Instance.PlaySound("Oven", 0.5f);
-            pointLight.SetActive(true);
-            ToggleVisibility();
             hasRun = true;
+            AudioManager.Instance.PlaySound("Oven", 0.5f);
+            ToggleVisibility();
+            _clipboardManager.Task4Completed();
         }
         else if (!hasRun && !item1place && !item2place && !item3place)
         {
             AudioManager.Instance.PlaySound("Fail", 0.5f);
+        }
+    }
+
+    void Update()
+    {
+        if (hasRun && item1place && item2place && item3place)
+        {
+            pointLight.SetActive(true);
         }
         else
         {

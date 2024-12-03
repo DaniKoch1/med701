@@ -9,6 +9,7 @@ public class TranportBetweenPoints : MonoBehaviour
     public Transform pointB;
     public float duration = 2.0f;
 
+    public ClipboardManager _clipboardManager;
 
     public LightManager LightManager;
     private bool isMoving = false;
@@ -49,6 +50,7 @@ public class TranportBetweenPoints : MonoBehaviour
         Debug.Log("start moving called");
         if (!isMoving && !hasMoved && item1ready && item2ready && item3ready)
         {
+            _clipboardManager.Task5Completed();
             AudioManager.Instance.PlaySound("Sucess", 0.5f);
             isMoving = true;
             t = 0.0f;
