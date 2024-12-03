@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void PlaySound(string name)
+    public void PlaySound(string name, float Volume)
     {
         Sound s = Array.Find(_sounds, x => x.name == name);
         if (s == null)
@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
         else
         {
             audioSource.clip = s.clip;
-            audioSource.PlayOneShot(audioSource.clip);
+            audioSource.PlayOneShot(audioSource.clip, Volume);
         }
     }
 }
