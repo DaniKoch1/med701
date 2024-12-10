@@ -2770,7 +2770,7 @@ PrefabInstance:
       objectReference: {fileID: 1032991917}
     - target: {fileID: 7495386529333762559, guid: 41db1b0a3bdf3e44eb2bfa0def58fe32, type: 3}
       propertyPath: m_Text
-      value: Place sterilized tools in tray to next cleanroom
+      value: Send sterilized tools to next cleanroom via the tray
       objectReference: {fileID: 0}
     - target: {fileID: 8399226900946231306, guid: 41db1b0a3bdf3e44eb2bfa0def58fe32, type: 3}
       propertyPath: m_AnchorMax.y

@@ -19,6 +19,9 @@
          "inputs-3",
          "inputs-1",
          "inputs-2",
+         "inputs-3",
+         "inputs-1",
+         "inputs-2",
          "inputs-3"
       ],
       "numInputs" : 3,
@@ -3722,6 +3725,9 @@
             }
          ],
          "inputNames" : [
+            "inputs-1",
+            "inputs-2",
+            "inputs-3",
             "inputs-1",
             "inputs-2",
             "inputs-3",

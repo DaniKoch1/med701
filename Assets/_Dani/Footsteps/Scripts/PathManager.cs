@@ -13,7 +13,7 @@ public class PathManager : MonoBehaviour
     private FootprintManager footprintManager;
     private List<GameObject> footprints;
     private IEnumerator outerCoroutine, innerCoroutine;
-    private const float newPathDelay = 10.0f, newStepDelay = 0.7f, offset = 0.5f, leftOffsetCorrection = 0.2f;
+    private const float newPathDelay = 5.0f, newStepDelay = 0.7f, offset = 0.5f, leftOffsetCorrection = 0.2f;
     private float elapsed, saturation;
     private int lastCount, totalfootprintNum;
     private bool isLeft;
@@ -28,9 +28,9 @@ public class PathManager : MonoBehaviour
         lastCount = 0;
         isLeft = false;
 
-        NavMesh.CalculatePath(origin.position, target.position, NavMesh.AllAreas, path);
-        outerCoroutine = VisualizePath();
-        StartCoroutine(outerCoroutine);
+        //NavMesh.CalculatePath(origin.position, target.position, NavMesh.AllAreas, path);
+        //outerCoroutine = VisualizePath();
+        //StartCoroutine(outerCoroutine);
     }
 
     void Update()
@@ -115,4 +115,12 @@ public class PathManager : MonoBehaviour
 
         return currentOffset;
     }
+    //void OnDisable()
+    //{
+    //    StopAllCoroutines();
+    //    for (int i = 0; i < footprints.Count; i++)
+    //    {
+    //        footprints[i].SetActive(false);
+    //    }
+    //}
 }
