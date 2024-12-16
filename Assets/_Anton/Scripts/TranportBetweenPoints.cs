@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+//Part of Update made with assistance of AI
 public class TranportBetweenPoints : MonoBehaviour
 {
     public Transform pointA;
     public Transform pointB;
     public float duration = 2.0f;
 
+    public ClipboardManager _clipboardManager;
 
     public LightManager LightManager;
     private bool isMoving = false;
@@ -27,7 +29,6 @@ public class TranportBetweenPoints : MonoBehaviour
 
     private void Start()
     {
-        //Just set the position to the A transform
         transform.position = pointA.position;
     }
     void Update()
@@ -40,7 +41,7 @@ public class TranportBetweenPoints : MonoBehaviour
             if (t >= 1.0f)
             {
                 isMoving = false;
-                t = 0.0f;  // Reset t for the next call
+                t = 0.0f;
             }
         }
     }
@@ -50,7 +51,8 @@ public class TranportBetweenPoints : MonoBehaviour
         Debug.Log("start moving called");
         if (!isMoving && !hasMoved && item1ready && item2ready && item3ready)
         {
-            AudioManager.Instance.PlaySound("Sucess");
+            _clipboardManager.Task5Completed();
+            AudioManager.Instance.PlaySound("Sucess", 0.5f);
             isMoving = true;
             t = 0.0f;
             hasMoved = true;
@@ -58,7 +60,7 @@ public class TranportBetweenPoints : MonoBehaviour
         }
         else if (!isMoving && !hasMoved && !item1ready && !item2ready && !item3ready)
         {
-            AudioManager.Instance.PlaySound("Fail");
+            AudioManager.Instance.PlaySound("Fail", 0.5f);
         }
       
     }

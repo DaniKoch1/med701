@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Made with the assists
 public class ReturnInteractables : MonoBehaviour
 {
     private Dictionary<GameObject, Vector3> originalPositions = new Dictionary<GameObject, Vector3>();
@@ -12,7 +13,7 @@ public class ReturnInteractables : MonoBehaviour
         GameObject[] allObjects = FindObjectsOfType<GameObject>();
         foreach (GameObject obj in allObjects)
         {
-            if ((interactableLayer.value & (1 << obj.layer)) != 0)
+            if (obj.layer == LayerMask.NameToLayer("Interactable"))
             {
                 originalPositions[obj] = obj.transform.position;
             }
@@ -21,7 +22,7 @@ public class ReturnInteractables : MonoBehaviour
 
     private void OnTriggerEnter(Collider _interactableToReturn)
     {
-        if ((interactableLayer.value & (1 << _interactableToReturn.gameObject.layer)) != 0 && originalPositions.ContainsKey(_interactableToReturn.gameObject))
+        if (_interactableToReturn.gameObject.layer == LayerMask.NameToLayer("Interactable") && originalPositions.ContainsKey(_interactableToReturn.gameObject))
         {
             _interactableToReturn.transform.position = originalPositions[_interactableToReturn.gameObject];
         }
