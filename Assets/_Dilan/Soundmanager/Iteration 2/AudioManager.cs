@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Inspired by https://youtu.be/QL29aTa7J5Q?si=1EslXKg1KK9CCqgb 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+//Part of Update made with assistance of AI
 public class TranportBetweenPoints : MonoBehaviour
 {
     public Transform pointA;
