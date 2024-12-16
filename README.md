@@ -1,10 +1,15 @@
 # MED701
 -----------Project Developers:-----------
 Anton Buus Hansen: antonbuushansen@gmail.com
+
 Daniela Koch: baqueta.dani@gmail.com
+
 Delan Ali: delan328@gmail.com
+
 Md. Injamul Haqueinjamul.abeg@gmail.com
+
 Nicolai Villas Østergaard: Nicolai.Villas.Oestergaard@gmail.com
+
 
 In August 2022 the EU commission published Annex1, a set of guidelines and rules for the manufacturing of sterile medicinal products within EU countries. This project aims to help entry-level employees in the least critical clean rooms to enhance their knowledge about the new regulations learned through reading them. To do so, a Virtual Reality application utilizing gamification and adaptability was developed. This is the source code of the developed prototype.
 
