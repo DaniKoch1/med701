@@ -73,6 +73,8 @@ public class PathManager : MonoBehaviour
         yield break;
     }
 
+    // SpawnAlongVector was inspired by highpockets' answer to this question:
+    // https://discussions.unity.com/t/how-can-i-spawn-a-series-of-objects-along-a-path/221851
     private IEnumerator SpawnAlongVector(Vector3 origin, Vector3 destination)
     {
         float distance  = Vector3.Distance(origin, destination);
