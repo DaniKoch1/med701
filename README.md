@@ -19,6 +19,12 @@ The project is made with Meta Quest2 in mind and cannot be played without it, th
 This project uses assets from the _Chemistry Lab Items Pack_ from the Unity Asset store:
 https://assetstore.unity.com/packages/3d/environments/chemistry-lab-items-pack-220212
 
+The project uses the "Simple rubber conveyor" 3D model as a basemesh for our own conveyor belt. Remodeling and textures are done by us.
+https://sketchfab.com/3d-models/simple-rubber-conveyor-0819b51c59c3407cb98f0e2c75029e30
+
+The project also uses this clipboard as a basemesh for our clipboard. Textures are done by us.
+https://sketchfab.com/3d-models/clipboard-7mb-a5f71d0bd08d4653880a92f19dbbf72a
+
 The mask for the shader graph was developed based on the _Unity How to create Shader Graph - Simple black & white image alpha cut (make your life easier)_ tutorial by _Tannos 2023_:
 https://www.youtube.com/watch?v=QUQijOdVfrY&ab_channel=Tannos2023
 
