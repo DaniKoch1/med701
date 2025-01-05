@@ -1350,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Particle System
       objectReference: {fileID: 0}
+    - target: {fileID: 5658256426360471060, guid: 06c0127a792700a40aeec55c24d1ba33, type: 3}
+      propertyPath: startDelay.scalar
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
